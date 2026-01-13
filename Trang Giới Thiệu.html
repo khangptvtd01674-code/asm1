@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ - THPT Lê Quý Đôn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #003366;
+            text-align: center;
+        }
+        .info, .form {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+        }
+        button {
+            background: #0066CC;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+        .time {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>LIÊN HỆ</h2>
+
+    <!-- Thông tin liên hệ -->
+    <div class="info">
+        <p><b>📍 Địa chỉ:</b> Trường THPT Lê Quý Đôn</p>
+        <p><b>📞 Điện thoại:</b> 0123 456 789</p>
+        <p><b>📧 Email:</b> lequydon@edu.vn</p>
+    </div>
+
+    <!-- Bản đồ -->
+    <h3>Bản đồ vị trí</h3>
+    <iframe 
+        src="https://www.google.com/maps?q=truong%20le%20quy%20don&output=embed">
+    </iframe>
+
+    <!-- Giờ làm việc -->
+    <p class="time">
+        ⏰ <b>Giờ làm việc:</b> Thứ 2 – Thứ 6 (07:30 – 17:00)
+    </p>
+
+    <!-- Form liên hệ -->
+    <div class="form">
+        <h3>Gửi tin nhắn</h3>
+        <form onsubmit="alert('Cảm ơn bạn đã liên hệ!');">
+            <label>Họ tên:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Số điện thoại:</label>
+            <input type="tel">
+
+            <label>Nội dung:</label>
+            <textarea rows="4" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

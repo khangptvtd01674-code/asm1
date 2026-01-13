@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Góp ý - THPT Lê Quý Đôn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #003366;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin: 8px 0 15px;
+            padding: 8px;
+        }
+        button {
+            background: #0066CC;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .note {
+            font-size: 13px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>GÓP Ý – PHẢN HỒI</h2>
+
+    <form onsubmit="alert('Cảm ơn bạn đã gửi góp ý!');">
+        
+        <label>Họ tên:</label>
+        <input type="text" required>
+
+        <label>Vai trò:</label>
+        <select>
+            <option>Học sinh</option>
+            <option>Phụ huynh</option>
+            <option>Giáo viên</option>
+        </select>
+
+        <label>Lớp (nếu là học sinh):</label>
+        <input type="text">
+
+        <label>Nội dung góp ý:</label>
+        <textarea rows="4" required></textarea>
+
+        <label>Đánh giá chất lượng:</label>
+        <select>
+            <option>⭐ 1 sao</option>
+            <option>⭐⭐ 2 sao</option>
+            <option>⭐⭐⭐ 3 sao</option>
+            <option>⭐⭐⭐⭐ 4 sao</option>
+            <option>⭐⭐⭐⭐⭐ 5 sao</option>
+        </select>
+
+        <p class="note">
+            🔒 Nhà trường cam kết bảo mật thông tin người gửi.
+        </p>
+
+        <button type="submit">Gửi góp ý</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoạt động ngoại khóa - THPT Lê Quý Đôn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+            color: #003366;
+        }
+        h3 {
+            color: #0066CC;
+        }
+
+        /* CLB grid */
+        .clubs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .club {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .club img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        /* Event list */
+        ul {
+            line-height: 1.6;
+        }
+
+        /* Gallery */
+        .gallery img {
+            width: 30%;
+            margin: 1%;
+            border-radius: 4px;
+        }
+
+        /* Achievement table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background: #e6f0ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>HOẠT ĐỘNG NGOẠI KHÓA</h2>
+
+    <!-- CLB -->
+    <h3>🎯 Các câu lạc bộ</h3>
+    <div class="clubs">
+        <div class="club">
+            <img src="https://via.placeholder.com/60">
+            <h4>CLB Toán học</h4>
+            <p>Rèn luyện tư duy và giải toán</p>
+        </div>
+        <div class="club">
+            <img src="https://via.placeholder.com/60">
+            <h4>CLB Tiếng Anh</h4>
+            <p>Giao tiếp và kỹ năng ngoại ngữ</p>
+        </div>
+        <div class="club">
+            <img src="https://via.placeholder.com/60">
+            <h4>CLB Văn nghệ</h4>
+            <p>Âm nhạc và biểu diễn</p>
+        </div>
+    </div>
+
+    <!-- Lịch hoạt động -->
+    <h3>📅 Lịch sự kiện sắp tới</h3>
+    <ul>
+        <li>15/03: Ngày hội thể thao học sinh</li>
+        <li>22/03: Cuộc thi hùng biện tiếng Anh</li>
+        <li>05/04: Hoạt động thiện nguyện</li>
+    </ul>
+
+    <!-- Gallery -->
+    <h3>🖼 Hình ảnh hoạt động</h3>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Hoat+Dong+1">
+        <img src="https://via.placeholder.com/300x200?text=Hoat+Dong+2">
+        <img src="https://via.placeholder.com/300x200?text=Hoat+Dong+3">
+    </div>
+
+    <!-- Thành tích -->
+    <h3>🏆 Thành tích học sinh</h3>
+    <table>
+        <tr>
+            <th>Năm</th>
+            <th>Cuộc thi</th>
+            <th>Giải thưởng</th>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>Học sinh giỏi cấp tỉnh</td>
+            <td>Giải Nhì</td>
+        </tr>
+        <tr>
+            <td>2025</td>
+            <td>Olympic tiếng Anh</td>
+            <td>Giải Ba</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
